@@ -1,3 +1,6 @@
-alert("Minha primeira mensagem"); //Vai mostrar um alerta
-confirm("Está gostando de JS?"); //Janela com o botão OK ou Confirmar
-prompt("Me fale o seu nome!"); // Vai perguntar o nome
+let nome = prompt("Qual é o seu nome?");
+document.write(
+  `Olá, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras </br>`,
+);
+document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`);
+document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`);
