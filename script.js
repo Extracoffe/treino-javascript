@@ -1,6 +1,10 @@
-let nome = prompt("Qual é o seu nome?");
-document.write(
-  `Olá, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras </br>`,
-);
-document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`);
-document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`);
+function somar() {
+  let tn1 = document.getElementById("txtn1");
+  let tn2 = document.querySelector("input#txtn2");
+  let res = document.querySelector("div#res");
+  let n1 = Number(tn1.value);
+  let n2 = Number(tn2.value);
+  let s = n1 + n2;
+
+  res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`;
+}
